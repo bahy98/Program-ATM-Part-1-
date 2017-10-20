@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="476.0" prefWidth="442.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="atmsystem.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="516.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="442.0" />
+      <Label layoutX="22.0" layoutY="24.0" text="Welcome To Moklet Bank System">
+         <font>
+            <Font name="Bebas" size="28.0" />
+         </font>
+      </Label>
+      <Separator layoutX="126.0" layoutY="74.0" prefHeight="0.0" prefWidth="200.0" />
+      <Label layoutX="118.0" layoutY="92.0" text="Masukkan Pin Anda">
+         <font>
+            <Font name="Franklin Gothic Medium" size="24.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="79.0" layoutY="180.0" prefHeight="269.0" prefWidth="284.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="99.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="101.0" minWidth="10.0" prefWidth="101.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="80.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="99.0" minHeight="10.0" prefHeight="83.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="96.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="96.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXButton id="button1" fx:id="button1" onAction="#tekan1" prefHeight="70.0" prefWidth="98.0" ripplerFill="#cd1212" text="1" textFill="#1e1414">
+               <font>
+                  <Font name="Bebas" size="29.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="button2" fx:id="button2" onAction="#tekan2" prefHeight="68.0" prefWidth="110.0" text="2" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Bebas" size="29.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="button4" fx:id="button4" onAction="#tekan4" prefHeight="102.0" prefWidth="128.0" text="4" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Bebas" size="29.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="button5" fx:id="button5" onAction="#tekan5" prefHeight="80.0" prefWidth="108.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Bebas" size="29.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="button3" fx:id="button3" onAction="#tekan3" prefHeight="93.0" prefWidth="108.0" text="3" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Bebas" size="29.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="button6" fx:id="button6" onAction="#tekan6" prefHeight="96.0" prefWidth="103.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Bebas" size="29.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="button7" fx:id="button7" onAction="#tekan7" prefHeight="69.0" prefWidth="95.0" text="7" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Bebas" size="29.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="button8" fx:id="button8" onAction="#tekan8" prefHeight="77.0" prefWidth="101.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Bebas" size="29.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="button9" fx:id="button9" onAction="#tekan9" prefHeight="89.0" prefWidth="112.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Bebas" size="29.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="buttonc" fx:id="buttonc" onAction="#tekanc" prefHeight="74.0" prefWidth="104.0" text="C" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Bebas" size="29.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="button0" fx:id="button0" onAction="#tekan0" prefHeight="93.0" prefWidth="101.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Bebas" size="29.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="buttonok" fx:id="buttonok" onAction="#tekanok" prefHeight="107.0" prefWidth="104.0" text="OK" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Bebas" size="29.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </GridPane>
+      <JFXPasswordField id="editpin" fx:id="editpin" focusColor="WHITE" layoutX="152.0" layoutY="137.0" onAction="#editpin" style="-fx-background-color: fffffff;" unFocusColor="#fffafa" />
+    </children>
+</AnchorPane>
